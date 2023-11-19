@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Labrada:wght@300&family=Poppins:ital,wght@0,400;0,500;0,600;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c76c6c;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 380px;
+    width: 100%;
+    background-color: #f4f4f4;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
+}
+
+.image{
+   position: relative;
+   height: 150px;
+   width: 150px;
+   border-radius: 650%;
+   background-color: #1070f4;
+   padding: 4px;
+   cursor: pointer;
+}
+
+
+.image .profile-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(250, 249, 249, 0.933);
+}
+
+.image .profile-img:hover{
+    padding: 5px;
+    background-color: seagreen;
+    height: 400px;
+   width: 400px;
+}
+
+
+.box .data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data .name{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.social{
+    flex-basis: 50%;
+}
+.social i{
+    font-size: 20px;
+    margin:25px 4px;
+    color: white;
+    padding:8px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+} 
+.social i:hover{
+    transform: rotate(50deg);
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 6px 25px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #725AC1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #725AC1;
+  }
+  
+  button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
+  }
+  
+  button:active {
+    transform: scale(0.9);
+  }
